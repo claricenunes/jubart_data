@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboards | JubartData</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+  <style>
+    html { scroll-behavior: smooth; }
+    a.card-link { text-decoration: none; color: inherit; }
+    .dash-card { transition: transform .15s ease, box-shadow .15s ease; border: 1px solid #ececec; border-radius: 16px; overflow: hidden; }
+    .dash-card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+    .dash-img { width: 100%; height: auto; object-fit: cover; display: block; }
+    .dash-img--reduced { width: 70% !important; object-fit: contain; margin: 0 auto; }
+    @media (max-width: 576px) {
+      .dash-img--reduced { width: 100% !important; }
+    }
+    .section-sep { margin: 3rem 0; padding-top: 1rem; border-top: 2px solid #f0f0f0; }
+  </style>
+
+  <!-- Return link -->
+  <link rel="canonical" href="https://jubartdata.com.br/#en">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+
+    <a class="navbar-brand" href="index.html">
+      <img src="imagens/logo_jubart.png" alt="Logo JubartData" width="100">
+    </a>
+
+    <button 
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Abrir menu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav mx-auto">
+
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="servicos.html">Services</a>
+        </li>
+
+        <a class="nav-link active" aria-current="page" href="dashboards.html">
+Dashboards
+</a>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contact</a>
+        </li>
+
+      </ul>
+
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <button class="btn btn-outline-light me-2">Login</button>
+        </li>
+
+        <li class="nav-item">
+          <button class="btn btn-outline-light">EN/PT</button>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+</header>
+
+<main>
+
+<!-- Main content -->
+<section class="py-5">
+  <div class="container">
+
+    <h2 class="text-center mb-3">Dashboards</h2>
+    <p class="lead text-center mb-4">
+      JubartData develops interactive dashboards for market monitoring, price analysis, and foreign trade.
+    </p>
+
+    <!-- Internal navigation -->
+    <div class="text-center mb-5">
+      <a href="#domestic-market" class="btn btn-outline-primary me-2">Domestic Market Panels</a>
+      <a href="#comex" class="btn btn-outline-primary">Foreign Trade Panels</a>
+    </div>
+
+    <!-- Block 1: Domestic Market -->
+    <h3 id="domestic-market" class="mb-4 text-center">Domestic Market Monitoring</h3>
+    <div class="row g-4 mb-5">
+
+      <!-- Daily Store Panel -->
+      <div class="col-md-6">
+        <article class="dash-card h-100 bg-white">
+          <div class="p-3">
+            <h5 class="mb-2">Daily Store Panel</h5>
+            <p class="mb-3">Daily price monitoring by store, with mobile-friendly design and focus on key categories.</p>
+          </div>
+          <img class="dash-img dash-img--reduced" src="imagens/tela_car_diversos_produtos.png" alt="Daily store panel - multiple products">
+          <div class="p-3">
+            <a class="btn btn-outline-primary btn-sm" href="outputs/painel_car_mor_sp_varios_produtos/painel_car_mor_sp_varios_produtos.html" target="_blank" rel="noopener">Access panel</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Geographic Price Monitor -->
+      <div class="col-md-6">
+        <article class="dash-card h-100 bg-white">
+          <div class="p-3">
+            <h5 class="mb-2">Geographic Price Monitor</h5>
+            <p class="mb-3">View prices by product, city, and region. Analyses guided by the 3 P’s: Product, Place, and Price.</p>
+          </div>
+          <img class="dash-img" src="imagens/tela_monitor_geografico_precos.png" alt="Geographic price monitor">
+          <div class="p-3">
+            <a class="btn btn-outline-primary btn-sm" href="https://monitor-precos.fly.dev" target="_blank" rel="noopener">Access monitor</a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Separator -->
+    <div class="section-sep"></div>
+
+    <!-- Block 2: Foreign Trade Data -->
+    <h3 id="comex" class="mb-4 text-center">Foreign Trade Data</h3>
+    <div class="row g-4">
+
+      <!-- Seafood Foreign Trade (FastAPI) -->
+      <div class="col-md-6">
+        <article class="dash-card h-100 bg-white">
+          <div class="p-3">
+            <h5 class="mb-2">Seafood Foreign Trade (FastAPI)</h5>
+            <p class="mb-3">Interactive visualization connected to the database, with dynamic filters and Plotly charts.</p>
+          </div>
+          <img class="dash-img" src="imagens/tela_dashboard_comex.png" alt="FastAPI dashboard for seafood trade">
+          <div class="p-3">
+            <a class="btn btn-outline-primary btn-sm" href="https://jubart-dashboard.fly.dev" target="_blank" rel="noopener">Access dashboard</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- US Tilapia Imports -->
+      <div class="col-md-6">
+        <article class="dash-card h-100 bg-white">
+          <div class="p-3">
+            <h5 class="mb-2">US Tilapia Imports</h5>
+            <p class="mb-3">Indicators and visualizations of US imports, with continuous updates and trend focus.</p>
+          </div>
+          <img class="dash-img dash-img--reduced" src="imagens/tela_painel_tilapia_US.png" alt="US tilapia imports panel">
+          <div class="p-3">
+            <a class="btn btn-outline-primary btn-sm" href="outputs/painel_tilapia_us/painel_tilapia_us.html" target="_blank" rel="noopener">Access panel</a>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 JubartData. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
