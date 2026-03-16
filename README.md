@@ -59,17 +59,193 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 =======
-# jubart.github.io
-Primeira versão do site Jubart
+# JubartData
 
-python 
-pandas
-plotly 
-postgresql
+> Plataforma web da JubartData — inteligência de dados para decisões estratégicas.
 
+Site institucional desenvolvido em **Laravel 12** com suporte bilíngue (PT/EN), sistema de autenticação, dashboards interativos e páginas de serviços.
 
-instalação
-node.js
-npm
-Tailwind 
->>>>>>> 2454e0231972999ee066057483e0a89c1aeb6eb6
+---
+
+## 🚀 Tecnologias
+
+- [Laravel 12](https://laravel.com/)
+- [PHP 8.3+](https://www.php.net/)
+- [Bootstrap 5.3](https://getbootstrap.com/)
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [Laravel Breeze](https://laravel.com/docs/starter-kits#laravel-breeze) (autenticação)
+
+---
+
+## 📋 Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado:
+
+- [PHP 8.3+](https://www.php.net/downloads)
+- [Composer](https://getcomposer.org/)
+- [Node.js 18+](https://nodejs.org/en) — baixe a versão **LTS**
+- [npm](https://www.npmjs.com/) — já vem junto com o Node.js
+
+---
+
+## ⚙️ Instalação
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/claricenunes/jubart_data.git
+cd jubart_data
+```
+
+### 2. Instale as dependências PHP
+
+```bash
+composer install
+```
+
+### 3. Configure o ambiente
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+Edite o arquivo `.env` com as suas configurações de banco de dados:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=jubart_data
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 4. Execute as migrations
+
+```bash
+php artisan migrate
+```
+
+### 5. Instale as dependências Node.js
+
+```bash
+npm install
+```
+
+### 6. Instale o Tailwind CSS
+
+```bash
+npm install tailwindcss@latest @tailwindcss/vite@latest --save-dev
+```
+
+### 7. Compile os assets
+
+**Para desenvolvimento** (mantém o servidor rodando e atualiza automaticamente):
+
+```bash
+npm run dev
+```
+
+**Para produção** (gera os arquivos finais):
+
+```bash
+npm run build
+```
+
+### 8. Inicie o servidor
+
+```bash
+php artisan serve
+```
+
+Acesse em: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+> ⚠️ Se usar `npm run dev`, mantenha os dois terminais rodando simultaneamente — um para o Laravel e outro para o Vite.
+
+---
+
+## 🗂️ Estrutura de Rotas
+
+| Rota | Página |
+|------|--------|
+| `/` | Home (PT) |
+| `/servicos` | Serviços (PT) |
+| `/dashboards` | Dashboards (PT) |
+| `/contato` | Contato (PT) |
+| `/en` | Home (EN) |
+| `/en/services` | Services (EN) |
+| `/en/dashboards` | Dashboards (EN) |
+| `/en/contact` | Contact (EN) |
+| `/login` | Login |
+| `/register` | Cadastro |
+| `/dashboard` | Painel do usuário (requer login) |
+| `/dashboards/painel-diario-por-loja` | Painel Diário por Loja |
+
+---
+
+## 🌐 Suporte Bilíngue
+
+O site possui versão completa em **português** e **inglês**. A troca de idioma é feita pelo botão **EN/PT** no header, que redireciona para a página equivalente no outro idioma.
+
+---
+
+## 🔐 Autenticação
+
+Autenticação implementada com **Laravel Breeze**. Funcionalidades disponíveis:
+
+- Login / Logout
+- Cadastro de usuário
+- Recuperação de senha
+- Verificação de e-mail
+- Edição de perfil
+
+---
+
+## 📦 Comandos Úteis
+
+```bash
+# Limpar cache de rotas
+php artisan route:clear
+
+# Limpar cache de configuração
+php artisan config:clear
+
+# Listar todas as rotas
+php artisan route:list
+
+# Executar migrations
+php artisan migrate
+
+# Reverter última migration
+php artisan migrate:rollback
+```
+
+---
+
+## 🐛 Problemas Comuns
+
+**Erro: `Vite manifest not found`**
+```bash
+npm run build
+```
+
+**Erro: `Can't resolve 'tailwindcss'`**
+```bash
+npm install tailwindcss@latest @tailwindcss/vite@latest --save-dev
+npm run build
+```
+
+**Erro: `404` em todas as rotas**
+```bash
+php artisan route:clear
+php artisan serve
+```
+
+---
+
+## 📄 Licença
+
+Este projeto é proprietário. Todos os direitos reservados © 2025 JubartData.
