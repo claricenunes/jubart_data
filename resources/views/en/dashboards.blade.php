@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17490337789"></script>
   <script>
@@ -37,7 +37,7 @@
 </head>
 <body>
 
-<x-header />
+<x-headerEn />
 
 <!-- HERO -->
 <section class="hero-dashboards">
@@ -46,54 +46,54 @@
       <div class="col-lg-7">
         <div class="hero-badge">Dashboards</div>
         <h1 class="section-title text-white mb-3">
-          Painéis interativos para <span style="color: var(--amarelo);">decisões em tempo real</span>
+          Interactive panels for <span style="color: var(--amarelo);">real-time decisions</span>
         </h1>
         <p class="lead" style="color: rgba(255,255,255,0.6);">
-          A JubartData desenvolve painéis de monitoramento de mercado, análise de preços e comércio exterior com visualizações dinâmicas.
+          JubartData builds market monitoring panels, price analysis and foreign trade visualizations with dynamic charts.
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTEÚDO -->
+<!-- CONTENT -->
 <section class="py-5" style="background: var(--panel);">
   <div class="container">
 
     <div class="nav-filtros d-flex gap-2 flex-wrap mb-5">
-      <a href="#mercado-nacional" class="btn active">Mercado Nacional</a>
-      <a href="#comex" class="btn">Comex</a>
+      <a href="#national-market" class="btn active">National Market</a>
+      <a href="#foreign-trade" class="btn">Foreign Trade</a>
     </div>
 
-    <!-- BLOCO 1 -->
-    <div class="secao-label">Mercado Nacional</div>
-    <h2 id="mercado-nacional" class="section-title mb-2">Acompanhamento do Mercado Nacional</h2>
-    <p class="lead-muted mb-4">Monitoramento de preços e tendências no mercado interno</p>
+    <!-- BLOCK 1 -->
+    <div class="secao-label">National Market</div>
+    <h2 id="national-market" class="section-title mb-2">National Market Monitoring</h2>
+    <p class="lead-muted mb-4">Price monitoring and trends in the domestic market</p>
 
     <div class="row g-4 mb-5">
 
       <div class="col-md-6">
         <article class="dash-card">
-          <img class="dash-img dash-img--reduced" src="/imagens/tela_car_diversos_produtos.png" alt="Painel diário por loja">
+          <img class="dash-img dash-img--reduced" src="/imagens/tela_car_diversos_produtos.png" alt="Daily panel by store">
           <div class="card-body">
-            <h5>Painel Diário por Loja</h5>
-            <p>Monitoramento diário de preços por loja, com visual otimizado para celular e foco nas principais categorias.</p>
-            <a class="btn-acessar" href="{{ route('painel.diario') }}" target="_blank">
-    Acessar o painel <i class="bi bi-arrow-right"></i>
-</a>
+            <h5>Daily Panel by Store</h5>
+            <p>Daily price monitoring by store, mobile-optimized with focus on key product categories.</p>
+            <a class="btn-acessar" href="{{ route('painel.diario') }}" target="_blank" rel="noopener">
+              Access panel <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
         </article>
       </div>
 
       <div class="col-md-6">
         <article class="dash-card">
-          <img class="dash-img" src="/imagens/tela_monitor_geografico_precos.png" alt="Monitor geográfico de preços">
+          <img class="dash-img" src="/imagens/tela_monitor_geografico_precos.png" alt="Geographic price monitor">
           <div class="card-body">
-            <h5>Monitor Geográfico de Preços</h5>
-            <p>Visualize preços por produto, cidade e região. Análises orientadas pelos 3 P's: Produto, Praça e Preço.</p>
-            <a class="btn-acessar" href="https://monitor-precos.fly.dev" target="_blank">
-    Acessar o monitor <i class="bi bi-arrow-right"></i>
-</a>
+            <h5>Geographic Price Monitor</h5>
+            <p>View prices by product, city and region. Analyses based on the 3 P's: Product, Place and Price.</p>
+            <a class="btn-acessar" href="https://monitor-precos.fly.dev" target="_blank" rel="noopener">
+              Access monitor <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
         </article>
       </div>
@@ -102,21 +102,21 @@
 
     <hr class="section-sep">
 
-    <!-- BLOCO 2 -->
-    <div class="secao-label">Comércio Exterior</div>
-    <h2 id="comex" class="section-title mb-2">Dados Comex</h2>
-    <p class="lead-muted mb-4">Visualizações interativas de exportações e importações</p>
+    <!-- BLOCK 2 -->
+    <div class="secao-label">Foreign Trade</div>
+    <h2 id="foreign-trade" class="section-title mb-2">Foreign Trade Data</h2>
+    <p class="lead-muted mb-4">Interactive visualizations of exports and imports</p>
 
     <div class="row g-4">
 
       <div class="col-md-6">
         <article class="dash-card">
-          <img class="dash-img" src="/imagens/tela_dashboard_comex.png" alt="Dashboard de comércio exterior de pescado">
+          <img class="dash-img" src="/imagens/tela_dashboard_comex.png" alt="Seafood foreign trade dashboard">
           <div class="card-body">
-            <h5>Comércio Exterior de Pescado</h5>
-            <p>Visualização interativa conectada ao banco de dados, com filtros dinâmicos e gráficos em Plotly.</p>
+            <h5>Seafood Foreign Trade</h5>
+            <p>Interactive visualization connected to the database with dynamic filters and Plotly charts.</p>
             <a class="btn-acessar" href="https://jubart-dashboard.fly.dev" target="_blank" rel="noopener">
-              Acessar o dashboard <i class="bi bi-arrow-right"></i>
+              Access dashboard <i class="bi bi-arrow-right"></i>
             </a>
           </div>
         </article>
@@ -124,12 +124,12 @@
 
       <div class="col-md-6">
         <article class="dash-card">
-          <img class="dash-img dash-img--reduced" src="/imagens/tela_painel_tilapia_US.png" alt="Painel de importações americanas de tilápia">
+          <img class="dash-img dash-img--reduced" src="/imagens/tela_painel_tilapia_US.png" alt="US tilapia imports panel">
           <div class="card-body">
-            <h5>Importações Americanas de Tilápia</h5>
-            <p>Indicadores e visualizações das importações dos EUA, com atualização contínua e foco em tendências.</p>
+            <h5>US Tilapia Imports</h5>
+            <p>Indicators and visualizations of US imports with continuous updates and trend focus.</p>
             <a class="btn-acessar" href="outputs/painel_tilapia_us/painel_tilapia_us.html" target="_blank" rel="noopener">
-              Acessar o painel <i class="bi bi-arrow-right"></i>
+              Access panel <i class="bi bi-arrow-right"></i>
             </a>
           </div>
         </article>
@@ -142,15 +142,15 @@
 <!-- CTA -->
 <section class="cta-section text-center">
   <div class="container">
-    <h2 class="section-title mb-3">Precisa de um dashboard personalizado?</h2>
-    <p class="lead-muted mb-4">Desenvolvemos painéis sob medida para sua organização.</p>
-    <a href="https://wa.me/5561993553849" target="_blank" class="btn btn-dark btn-lg me-2">Falar no WhatsApp</a>
-    <a href="{{ route('contato') }}" class="btn btn-outline-dark btn-lg">Enviar mensagem</a>
+    <h2 class="section-title mb-3">Need a custom dashboard?</h2>
+    <p class="lead-muted mb-4">We build tailored panels for your organization.</p>
+    <a href="https://wa.me/5561993553849" target="_blank" class="btn btn-dark btn-lg me-2">WhatsApp</a>
+    <a href="{{ route('contato.en') }}" class="btn btn-outline-dark btn-lg">Contact us</a>
   </div>
 </section>
 
 <footer class="bg-dark text-white text-center py-4">
-  <div class="container"><p class="mb-0">&copy; 2025 JubartData. Todos os direitos reservados.</p></div>
+  <div class="container"><p class="mb-0">&copy; 2025 JubartData. All rights reserved.</p></div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

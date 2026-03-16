@@ -33,7 +33,7 @@
 </head>
 <body>
 
-<x-header />
+<x-headerEn />
 
 <!-- HERO -->
 <section class="hero-home">
@@ -42,18 +42,16 @@
       <div class="col-lg-6 mb-5 mb-lg-0">
         <div class="hero-badge">JubartData</div>
         <h1 class="section-title text-white mb-3">
-          Inteligência de Dados para <span style="color: var(--amarelo);">Decisões Estratégicas</span>
+          Data Intelligence for <span style="color: var(--amarelo);">Strategic Decisions</span>
         </h1>
         <p class="lead mb-4" style="color: rgba(255,255,255,0.6);">
-          A JubartData transforma dados em diagnósticos econômicos,
-          estudos de mercado e dashboards estratégicos para empresas,
-          associações e instituições públicas.
+          JubartData transforms data into economic diagnostics, market studies, and strategic dashboards for companies, associations, and public institutions.
         </p>
         <a href="{{ route('servicos') }}" class="btn btn-warning btn-lg me-2 fw-bold" style="color: #0f172a;">
-          Conheça nossos serviços
+          Explore our services
         </a>
         <a href="{{ route('contato') }}" class="btn btn-outline-light btn-lg">
-          Fale conosco
+          Contact Us
         </a>
       </div>
       <div class="col-lg-6 text-center">
@@ -66,31 +64,31 @@
 <!-- O QUE FAZEMOS -->
 <section class="py-5" style="background: var(--panel);">
   <div class="container">
-    <h2 class="section-title text-center mb-2">Como ajudamos organizações</h2>
-    <p class="lead-muted text-center mb-5">Soluções baseadas em dados, escuta e método</p>
+    <h2 class="section-title text-center mb-2">How We Help Organizations</h2>
+    <p class="lead-muted text-center mb-5">Solutions based on data, listening, and methodology</p>
     <div class="row g-4">
 
       <div class="col-md-4">
         <div class="servico-card">
           <div class="servico-icon"><i class="bi bi-bar-chart-line"></i></div>
-          <h5 class="fw-bold mb-2">Estudos Econômicos</h5>
-          <p class="lead-muted" style="font-size: 0.9rem;">Análises aprofundadas sobre mercados, cadeias produtivas e tendências econômicas.</p>
+          <h5 class="fw-bold mb-2">Economic Studies</h5>
+          <p class="lead-muted" style="font-size: 0.9rem;">In-depth analyses of markets, production chains, and economic trends.</p>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="servico-card">
           <div class="servico-icon"><i class="bi bi-grid-1x2"></i></div>
-          <h5 class="fw-bold mb-2">Dashboards Estratégicos</h5>
-          <p class="lead-muted" style="font-size: 0.9rem;">Painéis interativos que transformam dados complexos em informações claras para tomada de decisão.</p>
+          <h5 class="fw-bold mb-2">Strategic Dashboards</h5>
+          <p class="lead-muted" style="font-size: 0.9rem;">Interactive dashboards that transform complex data into clear information for decision-making.</p>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="servico-card">
           <div class="servico-icon"><i class="bi bi-search"></i></div>
-          <h5 class="fw-bold mb-2">Diagnósticos de Mercado</h5>
-          <p class="lead-muted" style="font-size: 0.9rem;">Avaliação estratégica de setores, oportunidades e riscos de mercado.</p>
+          <h5 class="fw-bold mb-2">Market Diagnostics</h5>
+          <p class="lead-muted" style="font-size: 0.9rem;">Strategic evaluation of sectors, opportunities, and market risks.</p>
         </div>
       </div>
 
@@ -103,19 +101,19 @@
   <div class="container">
     <div class="row align-items-start">
       <div class="col-lg-4 mb-5 mb-lg-0">
-        <h2 class="section-title text-white mb-3">Clientes e Parceiros</h2>
+        <h2 class="section-title text-white mb-3">Clients and Partners</h2>
         <p style="color: rgba(255,255,255,0.5); font-size: 0.9rem; line-height: 1.8;">
-          Atuamos com entidades do setor produtivo, associações, projetos públicos e empresas privadas.
+          We work with entities from the productive sector, associations, public projects, and private companies.
         </p>
         <p style="color: rgba(255,255,255,0.4); font-size: 0.85rem; font-style: italic; margin-top: 20px;">
-          Deseja se tornar um parceiro da Jubart? Estamos prontos para ouvir sua demanda.
+          Want to become a partner of Jubart? We are ready to listen to your needs.
         </p>
       </div>
       <div class="col-lg-7 offset-lg-1">
-        <div class="cliente-item"><div class="cliente-dot"></div><p>Associações do agronegócio e setor de pescados</p></div>
-        <div class="cliente-item"><div class="cliente-dot"></div><p>Empresas de consultoria e inteligência de mercado</p></div>
-        <div class="cliente-item"><div class="cliente-dot"></div><p>Instituições públicas interessadas em diagnósticos econômicos</p></div>
-        <div class="cliente-item"><div class="cliente-dot"></div><p>Distribuidores, importadores e profissionais da cadeia alimentar</p></div>
+        <div class="cliente-item"><div class="cliente-dot"></div><p>Associations in the agribusiness sector and fishing industry</p></div>
+        <div class="cliente-item"><div class="cliente-dot"></div><p>Consulting companies and market intelligence firms</p></div>
+        <div class="cliente-item"><div class="cliente-dot"></div><p>Public institutions interested in economic diagnostics</p></div>
+        <div class="cliente-item"><div class="cliente-dot"></div><p>Distributors, importers, and professionals in the food supply chain</p></div>
       </div>
     </div>
   </div>
@@ -124,10 +122,10 @@
 <!-- CTA -->
 <section class="cta-section text-center">
   <div class="container">
-    <h2 class="section-title mb-3">Precisa de inteligência de dados para sua organização?</h2>
-    <p class="lead-muted mb-4">Entre em contato e descubra como podemos apoiar sua tomada de decisão.</p>
-    <a href="https://wa.me/5561993553849" target="_blank" class="btn btn-dark btn-lg me-2">Falar no WhatsApp</a>
-    <a href="{{ route('contato') }}" class="btn btn-outline-dark btn-lg">Enviar mensagem</a>
+    <h2 class="section-title mb-3">Need data intelligence for your organization?</h2>
+    <p class="lead-muted mb-4">Get in touch and discover how we can support your decision-making.</p>
+    <a href="https://wa.me/5561993553849" target="_blank" class="btn btn-dark btn-lg me-2">Contact on WhatsApp</a>
+    <a href="{{ route('contato') }}" class="btn btn-outline-dark btn-lg">Send Message</a>
   </div>
 </section>
 

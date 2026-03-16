@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17490337789"></script>
   <script>
@@ -10,7 +10,7 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Serviços | JubartData</title>
+  <title>Services | JubartData</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="/css/custom.css">
@@ -40,61 +40,61 @@
 </head>
 <body>
 
-<x-header />
+<x-headerEn />
 
 <!-- HERO -->
 <section class="hero-servicos">
   <div class="container">
     <div class="row">
       <div class="col-lg-7">
-        <div class="hero-badge">Nossos Serviços</div>
+        <div class="hero-badge">Our Services</div>
         <h1 class="section-title text-white mb-3">
-          Dados que geram <span style="color: var(--amarelo);">decisões estratégicas</span>
+          Data that drives <span style="color: var(--amarelo);">strategic decisions</span>
         </h1>
         <p class="lead" style="color: rgba(255,255,255,0.6);">
-          Combinamos automação, análise e visualização interativa para transformar dados complexos em conhecimento aplicável.
+          We combine automation, analysis and interactive visualization to turn complex data into actionable knowledge.
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SERVIÇOS -->
+<!-- SERVICES -->
 <section class="py-5" style="background: var(--panel);">
   <div class="container">
-    <h2 class="section-title mb-2">Soluções sob medida</h2>
-    <p class="lead-muted mb-5">O que oferecemos para cada desafio</p>
+    <h2 class="section-title mb-2">Tailored solutions</h2>
+    <p class="lead-muted mb-5">What we offer for each challenge</p>
     <div class="row g-4">
 
       <div class="col-md-6 col-lg-3">
         <div class="servico-card">
           <div class="servico-icon"><i class="bi bi-grid-1x2"></i></div>
-          <h5 class="fw-bold mb-2">Dashboards Interativos</h5>
-          <p class="lead-muted" style="font-size: 0.9rem;">Painéis sob medida para monitoramento de preços, comércio exterior e desempenho econômico.</p>
+          <h5 class="fw-bold mb-2">Interactive Dashboards</h5>
+          <p class="lead-muted" style="font-size: 0.9rem;">Custom panels for monitoring prices, foreign trade and economic performance with dynamic visualizations.</p>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-3">
         <div class="servico-card">
           <div class="servico-icon"><i class="bi bi-cpu"></i></div>
-          <h5 class="fw-bold mb-2">Coleta Automatizada</h5>
-          <p class="lead-muted" style="font-size: 0.9rem;">Captura automatizada de dados em fontes públicas e privadas, eliminando trabalho manual.</p>
+          <h5 class="fw-bold mb-2">Automated Data Collection</h5>
+          <p class="lead-muted" style="font-size: 0.9rem;">Automated capture from public and private sources, eliminating manual work and reducing operational errors.</p>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-3">
         <div class="servico-card">
           <div class="servico-icon"><i class="bi bi-bar-chart-line"></i></div>
-          <h5 class="fw-bold mb-2">Estudos de Mercado</h5>
-          <p class="lead-muted" style="font-size: 0.9rem;">Relatórios personalizados com análise de sazonalidade, volumes e tendências setoriais.</p>
+          <h5 class="fw-bold mb-2">Market Studies</h5>
+          <p class="lead-muted" style="font-size: 0.9rem;">Custom reports with seasonality, volume and sector trend analysis for seafood, dairy, meat and food markets.</p>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-3">
         <div class="servico-card">
           <div class="servico-icon"><i class="bi bi-diagram-3"></i></div>
-          <h5 class="fw-bold mb-2">Modelagem com IA</h5>
-          <p class="lead-muted" style="font-size: 0.9rem;">Rotinas analíticas com inteligência artificial para classificação, resumos e enriquecimento de dados.</p>
+          <h5 class="fw-bold mb-2">AI Modeling</h5>
+          <p class="lead-muted" style="font-size: 0.9rem;">Analytical routines with artificial intelligence for classification, summaries and data enrichment.</p>
         </div>
       </div>
 
@@ -102,32 +102,32 @@
   </div>
 </section>
 
-<!-- BASES DE DADOS -->
+<!-- DATA SOURCES -->
 <section class="py-5">
   <div class="container">
-    <h2 class="section-title mb-2">Bases que utilizamos</h2>
-    <p class="lead-muted mb-5">Fontes nacionais e internacionais de alta confiabilidade</p>
+    <h2 class="section-title mb-2">Data sources we use</h2>
+    <p class="lead-muted mb-5">National and international high-reliability databases</p>
     <div class="row g-4">
 
       <div class="col-md-6">
         <div class="base-group">
-          <div class="base-group-title">Bases Nacionais <span class="badge-pais">BR</span></div>
-          <div class="base-item"><strong>ComexStat (MDIC)</strong><span>Exportações e importações oficiais do Brasil</span></div>
-          <div class="base-item"><strong>Banco Central do Brasil (BACEN)</strong><span>Câmbio, juros e indicadores macroeconômicos</span></div>
-          <div class="base-item"><strong>IBGE</strong><span>IPCA, produção industrial e dados populacionais</span></div>
-          <div class="base-item"><strong>MAPA / CEAGESP / Conab</strong><span>Preços agrícolas, abastecimento, oferta e demanda</span></div>
-          <div class="base-item"><strong>Sites de Varejo</strong><span>Dados coletados de supermercados e e-commerces</span></div>
+          <div class="base-group-title">National Databases <span class="badge-pais">BR</span></div>
+          <div class="base-item"><strong>ComexStat (MDIC)</strong><span>Official Brazilian exports and imports data</span></div>
+          <div class="base-item"><strong>Central Bank of Brazil (BACEN)</strong><span>Exchange rates, interest and macroeconomic indicators</span></div>
+          <div class="base-item"><strong>IBGE</strong><span>CPI, industrial production and population data</span></div>
+          <div class="base-item"><strong>MAPA / CEAGESP / Conab</strong><span>Agricultural prices, supply and demand</span></div>
+          <div class="base-item"><strong>Retail Websites</strong><span>Data collected from supermarkets and e-commerce</span></div>
         </div>
       </div>
 
       <div class="col-md-6">
         <div class="base-group">
-          <div class="base-group-title">Bases Internacionais <span class="badge-pais">GLOBAL</span></div>
-          <div class="base-item"><strong>COMTRADE (ONU)</strong><span>Comércio internacional por código de produto</span></div>
-          <div class="base-item"><strong>World Bank</strong><span>Indicadores sociais e econômicos globais</span></div>
-          <div class="base-item"><strong>FAS-GATS (USDA)</strong><span>Exportações agrícolas dos EUA por país e produto</span></div>
-          <div class="base-item"><strong>ODEPA (Chile)</strong><span>Indicadores agropecuários do mercado chileno</span></div>
-          <div class="base-item"><strong>FishStat (FAO)</strong><span>Estatísticas globais de produção e comércio de pescados</span></div>
+          <div class="base-group-title">International Databases <span class="badge-pais">GLOBAL</span></div>
+          <div class="base-item"><strong>COMTRADE (UN)</strong><span>International trade by product code</span></div>
+          <div class="base-item"><strong>World Bank</strong><span>Global social and economic indicators</span></div>
+          <div class="base-item"><strong>FAS-GATS (USDA)</strong><span>US agricultural exports by country and product</span></div>
+          <div class="base-item"><strong>ODEPA (Chile)</strong><span>Agricultural indicators for the Chilean market</span></div>
+          <div class="base-item"><strong>FishStat (FAO)</strong><span>Global seafood production and trade statistics</span></div>
         </div>
       </div>
 
@@ -135,21 +135,21 @@
   </div>
 </section>
 
-<!-- METODOLOGIA -->
+<!-- METHODOLOGY -->
 <section class="metodologia-section">
   <div class="container">
     <div class="row align-items-start">
       <div class="col-lg-4 mb-5 mb-lg-0">
-        <h2 class="section-title text-white mb-3">Metodologia própria e diferenciada</h2>
+        <h2 class="section-title text-white mb-3">Our own differentiated methodology</h2>
         <p style="color: rgba(255,255,255,0.5); font-size: 0.9rem; line-height: 1.8;">
-          Baseada na Sociologia Econômica e na Análise do Discurso, interpretamos dados dentro de seus contextos sociais, políticos e simbólicos.
+          Grounded in Economic Sociology and Discourse Analysis, we interpret data within their social, political and symbolic contexts.
         </p>
       </div>
       <div class="col-lg-7 offset-lg-1">
-        <div class="metodo-step"><div class="metodo-number">01</div><div class="metodo-content"><h5>Escuta ativa do cliente</h5><p>Identificamos objetivos estratégicos e percepções que orientam a atuação da organização antes de qualquer análise.</p></div></div>
-        <div class="metodo-step"><div class="metodo-number">02</div><div class="metodo-content"><h5>Entrevistas exploratórias</h5><p>Conversas com atores do mercado para compreender os fluxos econômicos e os sentidos atribuídos a eles.</p></div></div>
-        <div class="metodo-step"><div class="metodo-number">03</div><div class="metodo-content"><h5>Análise e modelagem de dados</h5><p>Cruzamento de bases nacionais e internacionais com modelos customizados para cada projeto.</p></div></div>
-        <div class="metodo-step"><div class="metodo-number">04</div><div class="metodo-content"><h5>Entrega orientada à decisão</h5><p>Relatórios e dashboards que traduzem a complexidade em conhecimento aplicável para quem decide.</p></div></div>
+        <div class="metodo-step"><div class="metodo-number">01</div><div class="metodo-content"><h5>Active listening</h5><p>We identify strategic objectives and perceptions that guide the organization before any analysis.</p></div></div>
+        <div class="metodo-step"><div class="metodo-number">02</div><div class="metodo-content"><h5>Exploratory interviews</h5><p>Conversations with market actors to understand economic flows and the meanings attributed to them.</p></div></div>
+        <div class="metodo-step"><div class="metodo-number">03</div><div class="metodo-content"><h5>Data analysis and modeling</h5><p>Cross-referencing national and international databases with custom analytical models for each project.</p></div></div>
+        <div class="metodo-step"><div class="metodo-number">04</div><div class="metodo-content"><h5>Decision-oriented delivery</h5><p>Reports and dashboards that translate complexity into actionable knowledge for decision-makers.</p></div></div>
       </div>
     </div>
   </div>
@@ -158,15 +158,15 @@
 <!-- CTA -->
 <section class="cta-section text-center">
   <div class="container">
-    <h2 class="section-title mb-3">Pronto para transformar seus dados?</h2>
-    <p class="lead-muted mb-4">Fale com a JubartData. Transformamos complexidade em clareza.</p>
-    <a href="https://wa.me/5561993553849" target="_blank" class="btn btn-dark btn-lg me-2">Falar no WhatsApp</a>
-    <a href="{{ route('contato') }}" class="btn btn-outline-dark btn-lg">Enviar mensagem</a>
+    <h2 class="section-title mb-3">Ready to transform your data?</h2>
+    <p class="lead-muted mb-4">Talk to JubartData. We turn complexity into clarity.</p>
+    <a href="https://wa.me/5561993553849" target="_blank" class="btn btn-dark btn-lg me-2">WhatsApp</a>
+    <a href="{{ route('contato.en') }}" class="btn btn-outline-dark btn-lg">Contact us</a>
   </div>
 </section>
 
 <footer class="bg-dark text-white text-center py-4">
-  <div class="container"><p class="mb-0">&copy; 2025 JubartData. Todos os direitos reservados.</p></div>
+  <div class="container"><p class="mb-0">&copy; 2025 JubartData. All rights reserved.</p></div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
