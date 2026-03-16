@@ -19,6 +19,8 @@ Route::get('/en', fn() => view('en.welcome'))->name('inicio.en');
 Route::get('/en/services', fn() => view('en.services'))->name('servicos.en');
 Route::get('/en/dashboards', fn() => view('en.dashboards'))->name('dashboards.en');
 Route::get('/en/contact', fn() => view('en.contact'))->name('contato.en');
+Route::get('/en/login', fn() => view('en.login'))->name('login.en');
+Route::get('/en/register', fn() => view('en.register'))->name('register.en');
 
 
 // =================== AUTH (Breeze) ===================

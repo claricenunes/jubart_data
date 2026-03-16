@@ -32,16 +32,20 @@
         </li>
         @endif
         <li class="nav-item lang-switch-nav">
-          @if (request()->routeIs('servicos'))
-            <a href="{{ route('servicos.en') }}" class="btn btn-outline-light">EN</a>
-          @elseif (request()->routeIs('dashboards'))
-            <a href="{{ route('dashboards.en') }}" class="btn btn-outline-light">EN</a>
-          @elseif (request()->routeIs('contato'))
-            <a href="{{ route('contato.en') }}" class="btn btn-outline-light">EN</a>
-          @else
-            <a href="{{ route('inicio.en') }}" class="btn btn-outline-light">EN</a>
-          @endif
-        </li>
+  @if (request()->routeIs('servicos'))
+    <a href="{{ route('servicos.en') }}" class="btn btn-outline-light">EN</a>
+  @elseif (request()->routeIs('dashboards'))
+    <a href="{{ route('dashboards.en') }}" class="btn btn-outline-light">EN</a>
+  @elseif (request()->routeIs('contato'))
+    <a href="{{ route('contato.en') }}" class="btn btn-outline-light">EN</a>
+  @elseif (request()->routeIs('login'))
+    <a href="{{ route('login.en') }}" class="btn btn-outline-light">EN</a>
+  @elseif (request()->routeIs('register'))
+    <a href="{{ route('register.en') }}" class="btn btn-outline-light">EN</a>
+  @else
+    <a href="{{ route('inicio.en') }}" class="btn btn-outline-light">EN</a>
+  @endif
+</li>
       </ul>
     </div>
   </div>
