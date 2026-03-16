@@ -67,4 +67,9 @@ pandas
 plotly 
 postgresql
 
+
+instalação
+node.js
+npm
+Tailwind 
 >>>>>>> 2454e0231972999ee066057483e0a89c1aeb6eb6
