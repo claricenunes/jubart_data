@@ -137,8 +137,40 @@
       <h4>Bem-vindo de volta</h4>
       <p class="login-subtitle">Entre na sua conta para continuar</p>
 
-      <x-auth-session-status class="mb-3" :status="session('status')" />
-
+      @if (session('status'))
+<div style="
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  background: #0f172a;
+  color: #fff;
+  padding: 14px 24px;
+  border-radius: 100px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  animation: slideDown 0.4s ease, fadeOut 0.5s ease 3.5s forwards;
+">
+  <span style="width:10px;height:10px;border-radius:50%;background:#f0b900;flex-shrink:0;"></span>
+  {{ session('status') }}
+</div>
+<style>
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+    to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; pointer-events: none; }
+  }
+</style>
+@endif
+      
       <form method="POST" action="{{ route('login') }}">
         @csrf
 

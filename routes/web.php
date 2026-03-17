@@ -21,6 +21,7 @@ Route::get('/en/dashboards', fn() => view('en.dashboards'))->name('dashboards.en
 Route::get('/en/contact', fn() => view('en.contact'))->name('contato.en');
 Route::get('/en/login', fn() => view('en.login'))->name('login.en');
 Route::get('/en/register', fn() => view('en.register'))->name('register.en');
+Route::get('/en/forgot-password', fn() => view('en.forgot-password'))->name('password.request.en');
 
 
 // =================== AUTH (Breeze) ===================

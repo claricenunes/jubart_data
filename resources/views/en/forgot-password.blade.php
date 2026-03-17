@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Esqueci minha senha | JubartData</title>
+  <title>Forgot Password | JubartData</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="/css/custom.css">
@@ -26,7 +26,7 @@
 </head>
 <body>
 
-  <x-header />
+  <x-headerEn />
 
   @if (session('status'))
   <div style="position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:9999;background:#0f172a;color:#fff;padding:14px 24px;border-radius:100px;font-size:0.9rem;font-weight:600;display:flex;align-items:center;gap:10px;box-shadow:0 8px 24px rgba(0,0,0,0.2);animation:slideDown 0.4s ease,fadeOut 0.5s ease 3.5s forwards;">
@@ -42,11 +42,11 @@
   <div class="wrapper">
     <div class="card-custom">
 
-      <img src="/imagens/logo_jubart.png" alt="Logo JubartData" class="login-logo">
+      <img src="/imagens/logo_jubart.png" alt="JubartData Logo" class="login-logo">
 
-      <h4>Esqueceu sua senha?</h4>
+      <h4>Forgot your password?</h4>
       <p class="card-subtitle">
-        Sem problema. Informe seu e-mail e enviaremos um link para você criar uma nova senha.
+        No problem. Enter your email address and we'll send you a link to reset your password.
       </p>
 
       <form method="POST" action="{{ route('password.email') }}">
@@ -63,13 +63,13 @@
         </div>
 
         <button type="submit" class="btn-enviar">
-          <i class="bi bi-envelope me-1"></i> Enviar link de redefinição
+          <i class="bi bi-envelope me-1"></i> Send reset link
         </button>
 
       </form>
 
-      <a href="{{ route('login') }}" class="btn-voltar">
-        <i class="bi bi-arrow-left me-1"></i> Voltar para o login
+      <a href="{{ route('login.en') }}" class="btn-voltar">
+        <i class="bi bi-arrow-left me-1"></i> Back to login
       </a>
 
     </div>

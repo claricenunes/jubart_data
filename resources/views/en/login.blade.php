@@ -38,7 +38,7 @@
       <h4>Welcome back</h4>
       <p class="login-subtitle">Sign in to your account to continue</p>
 
-      <x-auth-session-status class="mb-3" :status="session('status')" />
+       <x-auth-session-status class="mb-3" :status="session('status')" />
 
       <form method="POST" action="{{ route('login') }}">
         @csrf

@@ -44,8 +44,11 @@ class RegisteredUserController extends Controller
 
         event(new Registered($user));
 
-        Auth::login($user);
 
-        return redirect(route('dashboard', absolute: false));
+        $mensagem = str_contains(url()->previous(), '/en/')
+    ? 'Account created successfully! Sign in to continue.'
+    : 'Conta criada com sucesso! Faça login para continuar.';
+
+return redirect()->route('login')->with('status', $mensagem);
     }
 }
